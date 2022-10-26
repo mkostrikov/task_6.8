@@ -9,4 +9,4 @@
 
 ### GitHub Pages
 
-<a href="https://mkostrikov.github.io/task_5.11/" target="_blank">Ссылка на проект</a>
+<a href="https://mkostrikov.github.io/task_6.8/" target="_blank">Ссылка на проект</a>
