@@ -23,12 +23,13 @@
   margin-right: 14px;
 }
 
-.widget-list a {
+.widget-list a,
+.changing-link {
   text-decoration: none;
   display: inline-block;
   padding: 6px 0;
   letter-spacing: 1px;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 400;
   color: #000;
 }
@@ -57,7 +58,8 @@ p {
 
 #consoleLog::after,
 #alert::after,
-#prompt::after {
+#prompt::after,
+.changing-link::after {
   content: "\00AB";
   margin-left: 5px;
   font-size: 1.5em;
