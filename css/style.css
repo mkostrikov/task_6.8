@@ -1,30 +1,31 @@
-.widget {
+main {
   padding: 20px 30px;
   background: white;
   font-family: "Times New Roman", Times, serif;
+  position: relative;
 }
 
-.widget-title {
+h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #222;
   padding-left: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   border-left: 4px solid #0000cd;
+  font-size: 2em;
 }
 
-.widget-list {
+.list {
   padding: 0;
   list-style: none;
 }
 
-.widget-list a:before {
+.list a:before {
   content: "\2014";
   margin-right: 14px;
 }
 
-.widget-list a,
-.changing-link {
+.list a {
   text-decoration: none;
   display: inline-block;
   padding: 6px 0;
@@ -34,60 +35,18 @@
   color: #000;
 }
 
-.widget-list a:hover {
+.list a:hover {
   background-color: #e2e8f0;
 }
 
-.widget-list a:visited {
+.list a:visited {
   color: gray;
 }
 
 p {
   letter-spacing: 1px;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 400;
   color: #000;
   display: inline-block;
-}
-
-#consoleLog,
-#alert,
-#prompt {
-  cursor: pointer;
-}
-
-#consoleLog::after,
-#alert::after,
-#prompt::after,
-.changing-link::after {
-  content: "\00AB";
-  margin-left: 5px;
-  font-size: 1.5em;
-}
-
-#consoleLog::before,
-#alert::before,
-#prompt::before {
-  content: "\00BB";
-  margin-right: 5px;
-  font-size: 1.5em;
-}
-
-code {
-  display: flex;
-  width: 400px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  background-color: #afeeee;
-}
-
-#trafficLight {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: black;
-  cursor: pointer;
-  margin-left: 60px;
 }

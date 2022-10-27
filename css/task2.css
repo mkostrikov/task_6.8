@@ -1,0 +1,55 @@
+#consoleLog,
+#alert,
+#prompt {
+  cursor: pointer;
+}
+
+#consoleLog::after,
+#alert::after,
+#prompt::after {
+  content: "\00AB";
+  margin-left: 5px;
+  font-size: 1.5em;
+  animation-name: blink;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#consoleLog::before,
+#alert::before,
+#prompt::before {
+  content: "\00BB";
+  margin-right: 5px;
+  font-size: 1.5em;
+  animation-name: blink;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+code {
+  display: flex;
+  width: 400px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+hr {
+  width: 400px;
+  position: absolute;
+  left: 30px;
+}

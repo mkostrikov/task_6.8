@@ -1,0 +1,19 @@
+form {
+  font-size: 1.5em;
+}
+
+form > button {
+  font-size: 0.8em;
+  background-color: #0000cd;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+form > button:hover {
+  background-color: #1e90ff;
+  cursor: pointer;
+}
+
+form > label > input {
+  font-size: 0.8em;
+}
